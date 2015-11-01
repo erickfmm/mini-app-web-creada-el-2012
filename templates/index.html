@@ -1,0 +1,10 @@
+<body>
+    {% for entry in entries %}
+    <div class="entry">
+		<a href="/blog1/{{entry.identification}}">Permalink</a>
+        <div class="entry-subject">{{entry.subject}}</div>
+        <pre class="entry-content">{{entry.content}}</pre>
+    </div>
+    <hr>
+    {% endfor %}
+</body>
